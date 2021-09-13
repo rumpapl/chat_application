@@ -1,0 +1,19 @@
+{
+  "name": "chat_application",
+  "version": "1.0.0",
+  "description": "Chat application using node js.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumpapl/chat_application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rumpapl/chat_application/issues"
+  },
+  "homepage": "https://github.com/rumpapl/chat_application#readme"
+}
