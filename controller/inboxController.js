@@ -1,8 +1,6 @@
 // get index page
 function getInbox(req, res, next) {
-  res.render("inbox", {
-    title: "Index",
-  });
+  res.render("inbox");
 }
 
 module.exports = {
