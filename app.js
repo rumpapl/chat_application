@@ -12,6 +12,7 @@ const {
 } = require("./middlewares/common/errorHandler");
 
 const loginRouter = require("./router/loginRouter");
+const usersRouter = require("./router/usersRoute");
 
 const app = express();
 dotenv.config();
@@ -40,7 +41,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 
 // routing setup
 app.use("/", loginRouter);
-// app.use("/users", usersRouter);
+app.use("/users", usersRouter);
 // app.use("/index", indexRouter);
 
 // 404 not found error handling
