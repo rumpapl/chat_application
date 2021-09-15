@@ -14,7 +14,7 @@ function uploader(
 
   // define storage
   const storage = multer.diskStorage({
-    distination: (req, file, cb) => {
+    destination: (req, file, cb) => {
       cb(null, UPLOAD_FOLDER);
     },
     filename: (req, file, cb) => {
