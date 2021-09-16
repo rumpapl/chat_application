@@ -7,3 +7,7 @@
 ## User Management & Validation
 
 [YouTube](https://www.youtube.com/watch?v=VclaxHIXrKw&list=PLHiZ4m8vCp9PHnOIT7gd30PCBoYCpGoQM&index=34)
+
+## JWT - Cookie Authentication
+
+[YouTube](https://www.youtube.com/watch?v=B63dURcrC5w&list=PLHiZ4m8vCp9PHnOIT7gd30PCBoYCpGoQM&index=33)
