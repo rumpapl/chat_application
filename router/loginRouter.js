@@ -8,11 +8,17 @@ const {
   addLoginValidator,
   addLoginValidationHandler,
 } = require("../middlewares/login/loginValidator");
+const { redirectInboxIfLoggedIn } = require("../middlewares/common/checkLogin");
 
 const router = express.Router();
 
 // login page
-router.get("/", decorateHtmlResponse("Login"), getLogin);
+router.get(
+  "/",
+  decorateHtmlResponse("Login"),
+  redirectInboxIfLoggedIn,
+  getLogin
+);
 
 // process login
 router.post(

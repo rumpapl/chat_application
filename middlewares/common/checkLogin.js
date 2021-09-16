@@ -1,4 +1,5 @@
 // external imports
+const { cookie } = require("express-validator");
 const jwt = require("jsonwebtoken");
 
 function checkLogin(req, res, next) {
@@ -43,6 +44,17 @@ function checkLogin(req, res, next) {
   }
 }
 
+const redirectInboxIfLoggedIn = (req, res, next) => {
+  let cookies =
+    Object.keys(req.signedCookies).length > 0 ? req.signedCookies : null;
+  if (cookies) {
+    res.redirect("/inbox");
+  } else {
+    next();
+  }
+};
+
 module.exports = {
   checkLogin,
+  redirectInboxIfLoggedIn,
 };
